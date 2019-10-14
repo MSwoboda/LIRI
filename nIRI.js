@@ -1,11 +1,10 @@
 require("dotenv").config();
 let keys = require("./keys.js");
 
-
 // Load the inquirer package
 const axios = require("axios");
-var Spotify = require('node-spotify-api');
-var spotify = new Spotify(keys.spotify);
+//var Spotify = require('node-spotify-api');
+//var spotify = new Spotify(keys.spotify);
 
 let moment = require("moment");
 

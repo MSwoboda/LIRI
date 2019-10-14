@@ -24,15 +24,17 @@ switch (IN_COM) {
         break;
     case `spotify-this-song`:
             console.log(`spotify-this-song`);
-            spotify.search({ type: 'track', query: IN_ARG }, function(err, data) {
-                if (err) {
-                  return console.log('Error occurred: ' + err);
-                }
+            // spotify.search({ type: 'track', query: IN_ARG }, function(err, data) {
+            //     if (err) {
+            //       return //console.log('Error occurred: ' + err);
+            //     }
                
-              console.log("Author: "+JSON.stringify(data.tracks.items[0].artists[0].name,null, 2));
+            //  // console.log(JSON.stringify(data.tracks.items[0].artists[0].name,null, 2));
+            // //   console.log("Song Name: "+JSON.stringify(data.tracks.items[0].artists[0].name,null, 2));
+            // //   console.log("Author: "+JSON.stringify(data.tracks.items[0].artists[0].name,null, 2));
+
               
-              
-              });
+            //   });
 
         break;
     case `movie-this`:

@@ -1,0 +1,28 @@
+{
+  "name": "nIRI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nIRI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSwoboda/nIRI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSwoboda/nIRI/issues"
+  },
+  "homepage": "https://github.com/MSwoboda/nIRI#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
+    "moment": "^2.24.0",
+    "moment-js": "^1.1.15",
+    "node-spotify-api": "^1.1.1",
+    "spotify": "^0.3.0"
+  }
+}

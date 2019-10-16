@@ -14,6 +14,7 @@ let IN_COM = process.argv[2];
 let IN_ARG = process.argv.splice(3, process.argv.length).toString();
 
 function commandSwitch(params) {
+    logThis("cmd"+","+IN_COM.toString() +","+ IN_COM.toString()+", @" + moment().format(moment.HTML5_FMT.DATETIME_LOCAL_SECONDS)+"\n")
 
     switch (IN_COM) {
         case `concert-this`:
@@ -108,7 +109,6 @@ function concertThis(params) {
 
     axios.get(`https://rest.bandsintown.com/artists/${IN_ARG}/events?app_id=codingbootcamp`).then(
         function (response) {
-            console.log(response.data[0]);
             for (let index = 0; index < 5; index++) {
                 console.log("-------------------");
 
@@ -120,6 +120,18 @@ function concertThis(params) {
         .catch(function (error) {
             console.log(error.config);
         });
+}
+
+function logThis(wombat) {
+  
+fs.appendFile("log.txt", wombat, function(err) {
+    if (err) {
+      console.log(err);
+    }
+    else {
+      console.log("Content Added!");
+    }
+   });
 }
 
 commandSwitch();

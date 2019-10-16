@@ -8,10 +8,10 @@ var spotify = new Spotify(keys.spotify);
 
 let moment = require("moment");
 
-
 let IN_COM = process.argv[2];
-let IN_ARG = process.argv[3];
+let IN_ARG = process.argv.splice(3, process.argv.length);
 
+console.log(typeof IN_ARG);
 
 //`https://rest.bandsintown.com/artists/${IN_ARG}/events?app_id=codingbootcamp`
 
@@ -30,8 +30,10 @@ switch (IN_COM) {
 
             console.log("Author: " + JSON.stringify(data.tracks.items[0].artists[0].name, null, 2));
             console.log("Song Name: " + JSON.stringify(data.tracks.items[0].name, null, 2));
-            // console.log("Author: " + JSON.stringify(data.tracks.items[0].artists[0].name, null, 2));
-
+            //link
+            console.log("Link: " + JSON.stringify(data.tracks.items[0].external_urls.spotify, null, 2));
+            //album
+            console.log("Album: " + JSON.stringify(data.tracks.items[0].album.name, null, 2));
 
         });
 

@@ -21,6 +21,7 @@ To install the dependecy package.json dependencies use:
  `concert-this <artist|band>` - Displays the five upcoming concerts by the specificed artits or band and the corresponding location, venue, and date.
 
  `spotify-this-song <song>` - Queries Spotify API for the most popular song with <song> title and displays the corresponding album, artist, and external Spotify link. 
- 
+
  `movie-this <movie title>` - Queries OMDB API for <movie title> and parses the API object. 
+ 
  `do-what-it-says` - Loads a predefined command from textfile and executes it.

@@ -128,9 +128,7 @@ fs.appendFile("log.txt", wombat, function(err) {
     if (err) {
       console.log(err);
     }
-    else {
-      console.log("Content Added!");
-    }
+   
    });
 }
 
